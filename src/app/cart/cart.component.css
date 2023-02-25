@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+.page {
+    height: 1500px;
+}
+
+img {
+    width: 300px;
+}
+
+.carte {
+    width: 800px;
+}
+
+.box {
+    height: 200px;
+    border: solid 20px red;
+}
+
+.title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+}

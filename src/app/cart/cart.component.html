@@ -1,0 +1,36 @@
+<div class="container page">
+    <div *ngFor="let item of cart">
+        <div class="d-flex carte">
+            <div class="flex-shrink-0">
+                <img src="{{item.img}}">
+            </div>
+            <div class="flex-grow-1 ms-3">
+                Discribtion: {{item.discribtion}}
+            </div>
+            <div class="flex-grow-1 ms-3">
+                price: {{item.price}} €
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="card-body title">Order Form</div>
+            <p>please fill up the info for the delivery</p>
+            <hr>
+            <form [formGroup]="myForm">
+
+                <label for="name">First Name: </label>
+                <input id="name" type="text" formControlName="name"> <br>
+                <hr>
+
+                <label for="Adresse">Last Name: </label>
+                <input id="Adresse" type="text" formControlName="Adresse">
+
+            </form>
+        </div>
+    </div>
+
+</div>

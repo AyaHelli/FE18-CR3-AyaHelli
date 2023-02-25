@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Menu Details</h1>
+    <div *ngIf="item">
+        <div class="d-flex">
+            <div class="flex-shrink-0">
+                <img src="{{item.img}}">
+            </div>
+            <div class="flex-grow-1 ms-3">
+                This is some content from a media component. You can replace this with any content and adjust it as needed.
+            </div>
+            <div class="flex-grow-1 ms-3">
+                price: {{item.price}} €
+            </div>
+
+        </div>
+    </div>
+</div>

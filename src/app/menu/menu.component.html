@@ -1,0 +1,33 @@
+<div class="container">
+
+    <div class="grid row row-cols-xl-3 row-cols-lg-3 row-cols-md-2 row-gap-3-cols-sm-1 row-cols-xs-1">
+
+        <div *ngFor="let val of item; index as id">
+            <div class="card" style="width: 18rem;">
+                <img src="{{val.img}}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">{{val.name}}</h5>
+                    <p class="card-text">{{val.discribtion}}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">{{val.price}}</li>
+                </ul>
+
+                <div class="d-flex justify-content-evenly p-3" *ngIf="val.availability == true;else alles">
+                    <button class="btn btn-primary " routerLink="menu/{{id}} "> Details</button>
+
+                    <button class="btn btn-success " (click)="addtoCart(val) "> Order</button>
+
+                </div>
+
+                <ng-template #alles>
+                    <p class="card-text fw-bold text-danger">This product is not avilable</p>
+                </ng-template>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

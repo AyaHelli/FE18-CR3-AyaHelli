@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+.home {
+    height: 600px;
+    width: 1300px;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    margin: 20px;
+}
+
+.pic {
+    float: left;
+}
+
+.text {
+    height: 200px;
+}

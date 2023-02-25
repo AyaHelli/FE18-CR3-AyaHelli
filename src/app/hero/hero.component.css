@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+.hero {
+    background-image: url(https://cdn.pixabay.com/photo/2016/04/25/06/39/food-1351287__480.jpg);
+    height: 400px;
+    margin: 20px;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    align-items: center;
+    padding-top: 130px;
+    font-size: 70px;
+}
